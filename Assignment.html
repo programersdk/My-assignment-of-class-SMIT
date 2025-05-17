@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMart - Online Shopping</title>
+</head>
+<body>
+
+    <header>
+        <h1>MegaMart</h1>
+        <h2>Your Complete Shopping Destination</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Electronics</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Books</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Music</a></li>
+            <li><a href="#">Groceries</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Product Search</h2>
+        <form action="/search" method="get">
+            <input type="text" name="query" placeholder="Search products...">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Featured Products</h2>
+        <table border="2" bgcolor="#efefef">
+            <thead>
+                <tr>
+                    <th width="350">Product</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="placeholder_headphone.jpg" alt="Wireless Headphones" width="200"><br>
+                        Wireless Headphones
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Premium Noise Cancelling Bluetooth Headphones</li>
+                            <li>Long Battery Life</li>
+                            <li>Comfortable Design</li>
+                            <li>IPX4 Water Resistance</li>
+                        </ul>
+                    </td>
+                    <td>$199.99</td>
+                    <td>In Stock</td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="placeholder_watch.jpg" alt="Smart Watch Pro" width="200"><br>
+                        Smart Watch Pro
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Advanced Health Tracking Smartwatch</li>
+                            <li>1.4 Inch Touchscreen</li>
+                            <li>Built-in GPS</li>
+                            <li>Sports Modes</li>
+                        </ul>
+                    </td>
+                    <td>$89.99</td>
+                    <td>Low Stock</td>
+                    <td><button>Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Create New Account</h2>
+        <form action="/create-account" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="firstName" required>
+                </div>
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="lastName" required>
+                </div>
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Information</legend>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirmPassword" required>
+                </div>
+            </fieldset>
+
+            <button type="submit">Create Account</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Product Comparison</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Product 1</th>
+                    <th>Product 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feature 1</td>
+                    <td>Description</td>
+                    <td>Description</td>
+                </tr>
+                <tr>
+                    <td>Feature 2</td>
+                    <td>Description</td>
+                    <td>Description</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Checkout Process</h2>
+        <form action="/checkout" method="post">
+            <fieldset>
+                <legend>Shipping Address</legend>
+                <!-- Add address fields here -->
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <!-- Add payment fields here -->
+            </fieldset>
+            <button type="submit">Complete Order</button>
+        </form>
+    </section>
+<iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE_HERE" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <footer>
+        &copy; 2025 MegaMart. All rights reserved.
+    </footer>
+
+</body>
+</html>
